@@ -16,7 +16,7 @@ void loop() {
   delay(1000);
 
   // temp  
-  Serial.println(Iridium::read()); // eventually we wont need to do these declarations from main with our managers
+  Serial.println(Iridium::Read()); // eventually we wont need to do these declarations from main with our managers
   if(IMU::read().x > 3) Serial.println("Oh no, this is a temporary program and x will always be 1! How did we get here");
 
   DEVICES::powerOn(DEVICES::IRIDIUM);

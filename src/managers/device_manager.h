@@ -10,7 +10,7 @@ namespace DEVICES
         IMU // device 1, pdm 2
     };
 
-    bool* DeviceStatus = malloc(2 * sizeof(bool)); // can be unsafely allocated since it would never need to be deallocated
+    bool* DeviceStatus = (bool*)malloc(2 * sizeof(bool)); // can be unsafely allocated since it would never need to be deallocated
 
     // temp
     void powerOn(Device device)

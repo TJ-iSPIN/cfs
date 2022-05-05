@@ -2,7 +2,8 @@
 
 namespace Iridium
 {
-    const char* read();
+    void Init();
 
-    void transmit();
+    const char* Read();
+    void Transmit();
 }
